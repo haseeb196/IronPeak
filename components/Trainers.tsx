@@ -9,7 +9,7 @@ export default function Trainers() {
             Coaches
           </p>
           <h2 className="mt-3 font-[family-name:var(--font-oswald)] font-semibold text-4xl md:text-5xl uppercase text-iron-950 text-balance">
-            Every session, someone's watching your bar path
+            Every session, someone&apos;s watching your bar path
           </h2>
         </div>
 

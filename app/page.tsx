@@ -9,7 +9,7 @@ import Trainers from "@/components/Trainers";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import { use } from "react";
+
 
 export default function Home() {
   return (
