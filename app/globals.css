@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  /* Color system — quarry & oxide, not the default cream/terracotta or near-black/acid combos */
+  --color-iron-950: #17181a; /* deepest charcoal, hero bg */
+  --color-iron-900: #1e2023;
+  --color-iron-800: #2b2d31;
+  --color-iron-700: #3a3d42; /* steel surface */
+  --color-iron-500: #6b6f76; /* mid steel */
+  --color-chalk-100: #edeae3; /* chalk white — warm, not stark */
+  --color-chalk-50: #f6f4ef;
+  --color-oxide-600: #b5462f; /* signature accent — oxidized iron */
+  --color-oxide-500: #c2532f;
+  --color-oxide-400: #d3703f;
+  --color-brass-500: #c9a227; /* rare use — achievement / highlight only */
+
+  --font-display: "Oswald", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --breakpoint-xs: 420px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  background-color: var(--color-chalk-50);
+  color: var(--color-iron-950);
+  font-family: var(--font-body);
+}
+
+::selection {
+  background-color: var(--color-oxide-600);
+  color: var(--color-chalk-100);
+}
+
+/* Visible keyboard focus everywhere */
+:focus-visible {
+  outline: 2px solid var(--color-oxide-500);
+  outline-offset: 3px;
+}
+
+/* Utility: topographic contour texture used sparingly as the page's signature motif */
+.contour-bg {
+  background-image: repeating-radial-gradient(
+    circle at 20% 30%,
+    transparent 0,
+    transparent 38px,
+    rgba(237, 234, 227, 0.05) 39px,
+    transparent 40px
+  );
+}
+
+.text-balance {
+  text-wrap: balance;
+}
