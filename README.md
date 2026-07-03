@@ -40,11 +40,4 @@ lib/
   data.ts          All copy/content — edit this to change site content
 ```
 
-## Notes
 
-- No external images are used — all visual texture comes from CSS/SVG
-  (contour background, initials-as-avatars) so the design holds up without
-  an image pipeline. Swap in real photography in `Trainers.tsx` and `Hero.tsx`
-  whenever you're ready.
-- The contact form is client-side only (`onSubmit={(e) => e.preventDefault()}`)
-  — wire it up to an API route or a form service before shipping.
